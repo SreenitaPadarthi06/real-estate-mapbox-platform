@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Luxury Apartment",
+    "price": "$850000",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "id": 2,
+    "title": "Modern Condo",
+    "price": "$720000",
+    "lat": 37.7849,
+    "lng": -122.4094
+  },
+  {
+    "id": 3,
+    "title": "Family House",
+    "price": "$950000",
+    "lat": 37.7649,
+    "lng": -122.4294
+  }
+]
