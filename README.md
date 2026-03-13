@@ -1,16 +1,98 @@
-# React + Vite
+# Real Estate Map Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive map-based real estate application that allows users to explore properties, search locations, and interact with markers directly on the map.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+* 📍 Display property markers on an interactive map
+* 🔎 Search properties by name
+* 🌍 Search cities using geocoding
+* ➕ Click anywhere on the map to add custom markers
+* 🧩 Marker clustering for improved performance
+* 📱 Responsive full-screen map interface
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **React**
+* **Leaflet**
+* **React Leaflet**
+* **OpenStreetMap**
+* **React Leaflet Cluster**
+
+---
+
+## Installation
+
+Clone the repository:
+
+```
+git clone https://github.com/SreenitaPadarthi06/real-estate-mapbox-platform.git
+```
+
+Navigate to the project directory:
+
+```
+cd real-estate-mapbox-platform
+```
+
+Install dependencies:
+
+```
+npm install
+```
+
+Start the development server:
+
+```
+npm run dev
+```
+
+The application will run at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## Project Structure
+
+```
+src
+ ├── components
+ │   ├── MapView.jsx
+ │   ├── Filters.jsx
+ │   └── LocationSearch.jsx
+ │
+ ├── data
+ │   └── properties.json
+ │
+tests
+ └── integration
+```
+
+---
+
+## Docker Setup
+
+Build the Docker image:
+
+```
+docker build -t real-estate-map .
+```
+
+Run the container:
+
+```
+docker run -p 5173:5173 real-estate-map
+```
+
+---
+
+## Author
+
+P.K.Sreenita
